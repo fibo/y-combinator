@@ -1,0 +1,26 @@
+{
+  "name": "y-combinator",
+  "version": "0.0.0",
+  "description": "is one of the fixed-point combinators in untyped lambda calculus",
+  "main": "index.js",
+  "scripts": {
+    "postversion": "git push origin v${npm_package_version}; npm publish; git push origin master",
+    "test": "tape test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fibo/y-combinator.git"
+  },
+  "keywords": [
+    "functional"
+  ],
+  "author": "Gianluca Casati (http://g14n.info)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/fibo/y-combinator/issues"
+  },
+  "homepage": "http://npm.im/y-combinator",
+  "devDependencies": {
+    "tape": "^4.6.2"
+  }
+}
