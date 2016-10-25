@@ -2,6 +2,8 @@
 
 > is one of the fixed-point combinators in untyped lambda calculus
 
+All credits go to [Haskell Curry](https://en.wikipedia.org/wiki/Haskell_Curry).
+
 [Installation](#installation) |
 [Annotated source](#annotated-source) |
 [Example](#example) |
@@ -39,7 +41,8 @@ Here it is the code, it is a function that consumes a function and returns a fun
 ## Example
 
 **Q.** What can I do with the Y Combinator?
-**A.** For example you can use it to get a factorial function, the following code works
+
+**A.** Mmh, for example you can use it to get a factorial function, the following code works.
 
 ```
 var Y = require('y-cominator')
