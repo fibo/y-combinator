@@ -2,7 +2,18 @@
 
 > is one of the fixed-point combinators in untyped lambda calculus
 
-[![KLP](https://img.shields.io/badge/kiss-literate-orange.svg)](http://g14n.info/kiss-literate-programming)
+[Installation](#installation) |
+[Annotated source](#annotated-source) |
+[Example](#example) |
+[License](#license)
+
+[![KLP](https://img.shields.io/badge/kiss-literate-orange.svg)](http://g14n.info/kiss-literate-programming) [![Build Status](https://travis-ci.org/fibo/y-combinator.svg?branch=master)](https://travis-ci.org/fibo/y-combinator?branch=master)
+
+## Installation
+
+```
+npm install y-combinator
+```
 
 ## Annotated source
 
