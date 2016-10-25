@@ -8,4 +8,3 @@ function Y(le) {
   }))
 }
 module.exports = Y
-return n <= 2 ? n : n * fac(n - 1)

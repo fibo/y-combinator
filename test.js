@@ -1,17 +1,19 @@
-var test = require('tape')
-var assert = require('assert')
-var Y = require('./index')
+const test = require('tape')
+const assert = require('assert')
+const Y = require('./index')
 
-test('factorial', function (t) {
-  t.plan(1)
+test('factorial', (t) => {
+  t.plan(2)
 
-  var factorial = Y(function (fac) {
+  const factorial = Y(function (fac) {
     return function (n) {
       return n <= 2 ? n : n * fac(n - 1)
     }
   })
 
-  var number120 = factorial(5)
+  t.equal(factorial(5), 120)
 
-  t.equal(number120, 120)
+  const factorialArrow = Y(fac => n => n <= 2 ? n : n * fac(n - 1))
+
+  t.equal(factorialArrow(5), 120)
 })

@@ -42,16 +42,12 @@ Here it is the code, it is a function that consumes a function and returns a fun
 
 **Q.** What can I do with the Y Combinator?
 
-**A.** Mmh, for example you can use it to get a factorial function, the following code works.
+**A.** Mmh, for example you can use it to get a factorial function, the following code works!
 
 ```
 var Y = require('y-cominator')
 
-var factorial = Y(function (fac) {
-  return function (n) {
-    return n <= 2 ? n : n * fac(n - 1)
-  }
-})
+var factorial = Y(fac => n => n <= 2 ? n : n * fac(n - 1))
 
 console.log(factorial(5)) // 120
 ```
