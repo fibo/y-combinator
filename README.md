@@ -9,7 +9,8 @@ All credits go to [Haskell Curry](https://en.wikipedia.org/wiki/Haskell_Curry).
 [Example](#example) |
 [License](#license)
 
-[![KLP](https://img.shields.io/badge/kiss-literate-orange.svg)](http://g14n.info/kiss-literate-programming) [![Build Status](https://travis-ci.org/fibo/y-combinator.svg?branch=master)](https://travis-ci.org/fibo/y-combinator?branch=master)
+[![KLP](https://img.shields.io/badge/kiss-literate-orange.svg)](http://g14n.info/kiss-literate-programming)
+[![Build Status](https://travis-ci.org/fibo/y-combinator.svg?branch=master)](https://travis-ci.org/fibo/y-combinator?branch=master)
 
 ## Installation
 

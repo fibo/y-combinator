@@ -19,7 +19,7 @@
   "bugs": {
     "url": "https://github.com/fibo/y-combinator/issues"
   },
-  "homepage": "http://npm.im/y-combinator",
+  "homepage": "http://g14n.info/y-combinator",
   "devDependencies": {
     "tape": "^4.6.2"
   }
