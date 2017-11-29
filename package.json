@@ -1,6 +1,6 @@
 {
   "name": "y-combinator",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "is one of the fixed-point combinators in untyped lambda calculus",
   "main": "index.js",
   "scripts": {
