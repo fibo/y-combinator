@@ -1,19 +1,14 @@
-const test = require('tape')
-const assert = require('assert')
-const Y = require('./index')
+import assert from 'assert'
+import y from './y.js'
 
-test('factorial', (t) => {
-  t.plan(2)
-
-  const factorial = Y(function (fac) {
-    return function (n) {
-      return n <= 2 ? n : n * fac(n - 1)
-    }
-  })
-
-  t.equal(factorial(5), 120)
-
-  const factorialArrow = Y(fac => n => n <= 2 ? n : n * fac(n - 1))
-
-  t.equal(factorialArrow(5), 120)
+const factorial = y(function (fac) {
+  return function (n) {
+    return n <= 2 ? n : n * fac(n - 1)
+  }
 })
+
+assert.equal(factorial(5), 120)
+
+const factorialArrow = y((fac) => (n) => (n <= 2 ? n : n * fac(n - 1)))
+
+assert.equal(factorialArrow(5), 120)

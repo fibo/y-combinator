@@ -2,10 +2,11 @@
   "name": "y-combinator",
   "version": "1.0.1",
   "description": "is one of the fixed-point combinators in untyped lambda calculus",
-  "main": "index.js",
+  "type": "module",
+  "exports": "y.js",
   "scripts": {
     "postversion": "git push origin v${npm_package_version}; npm publish; git push origin master",
-    "test": "tape test.js"
+    "test": "node test.js"
   },
   "repository": {
     "type": "git",
@@ -19,8 +20,5 @@
   "bugs": {
     "url": "https://github.com/fibo/y-combinator/issues"
   },
-  "homepage": "http://g14n.info/y-combinator",
-  "devDependencies": {
-    "tape": "^4.6.2"
-  }
+  "homepage": "http://g14n.info/y-combinator"
 }

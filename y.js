@@ -1,4 +1,4 @@
-function Y(le) {
+export default function y(le) {
   return (function (f) {
     return f(f)
   }(function (f) {
@@ -7,4 +7,3 @@ function Y(le) {
     })
   }))
 }
-module.exports = Y
